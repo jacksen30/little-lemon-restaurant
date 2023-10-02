@@ -4,10 +4,12 @@ export default function Nav() {
   return (
     <nav>
         <ul>
-            <li>A</li>
-            <li>B</li>
-            <li>C</li>
-            <li>D</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Reservations</a></li>
+            <li><a href="#">Order Online</a></li>
+            <li><a href="#">Login</a></li>
         </ul>
     </nav>
   )
