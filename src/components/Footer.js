@@ -5,11 +5,11 @@ export default function Footer() {
     <footer className="footer flex">
         <div className="container">
             <div className="footer-image footer-div-1">
-                <img src="" alt="" />
+                <img src="./images/footer-logo.png" alt="little lemon company logo" className="footer__logo" />
             </div>
             <div className="footer-div-2">
                 <ul className="footer__link-list">
-                    <li>Other Pages</li>
+                    <li className="footer__list-title">Other Pages</li>
                     <li><a href="http://example.com">Home</a></li>
                     <li><a href="http://example.com">About</a></li>
                     <li><a href="http://example.com">Menu</a></li>
@@ -20,7 +20,7 @@ export default function Footer() {
             </div>
             <div className="footer-div-3">
                 <ul className="footer__link-list">
-                    <li>Contact</li>
+                    <li className="footer__list-title">Contact</li>
                     <li>123 Seaseme Street</li>
                     <li>Perth W.A 6000</li>
                     <li>(08) 9922 1234</li>
@@ -28,7 +28,7 @@ export default function Footer() {
                 </ul>
             </div>
             <div className="footer-div-4">
-                <h4>Social Media Links</h4>
+                <h4 className="footer__list-title">Social Media Links</h4>
                 <div className="socialMediaIconWrapper">
                     <p><span>1</span><span>2</span><span>3</span></p>
 
