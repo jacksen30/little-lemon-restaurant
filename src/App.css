@@ -104,8 +104,28 @@ The element will be visually hidden but will still be read by screen reader tech
 /* Divs & Containers */
 
 body {
-    display: flex;
-    font-family: 'Manrope', sans-serif;
-    font-weight: 800;
-    background-color: hsl(188, 40%, 57%);
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  background-color: hsl(188, 40%, 57%);
+}
+
+/* HEADER SECTION - CSS */
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #FFF;
+  width: 100%;
+}
+
+/* NAV SECTION - CSS */
+
+.nav__link-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav__link-list li {
+  list-style: none;
+  padding-right: 20px;
 }
