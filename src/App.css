@@ -166,3 +166,14 @@ body {
   width: 264px;
   background-color: pink;
 }
+
+.footer__link-list li {
+  list-style: none;
+  padding-right: 20px;
+}
+
+.footer__link-list li a {
+  color: black;
+  font-weight: 800;
+  text-decoration: none;
+}
