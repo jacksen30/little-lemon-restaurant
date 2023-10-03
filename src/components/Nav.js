@@ -4,12 +4,12 @@ export default function Nav() {
   return (
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Reservations</a></li>
-            <li><a href="#">Order Online</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="http://example.com">Home</a></li>
+            <li><a href="http://example.com">About</a></li>
+            <li><a href="http://example.com">Menu</a></li>
+            <li><a href="http://example.com">Reservations</a></li>
+            <li><a href="http://example.com">Order Online</a></li>
+            <li><a href="http://example.com">Login</a></li>
         </ul>
     </nav>
   )
