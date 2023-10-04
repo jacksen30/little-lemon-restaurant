@@ -35,9 +35,7 @@ html:focus-within {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  font-family: 'Poppins', sans-serif;;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
 }
 
 /* A elements that don't have a class get default styles */
@@ -88,11 +86,12 @@ The element will be visually hidden but will still be read by screen reader tech
 :root {
   --color-mainBg: hsl(217, 54%, 11%);
 
-  --color1: hsl(193, 38%, 86%);     /* Light Cyan */
-  --color2: hsl(150, 100%, 66%);    /* Neon Green */
-  --color3: hsl(217, 19%, 38%);     /* Grayish Blue */
-  --color4: hsl(217, 19%, 24%);     /* Dark Grayish Blue */
-  --color5: hsl(218, 23%, 16%);     /* Dark Blue */
+  --color1: #495E57; /* RENAME ALL VARIABLE WITH SEMANTIC NAMES */
+  --color2: #F4CE14;
+  --color3: #EE9972;
+  --color4: #FBDABB;
+  --color5: #EDEFEE;
+  --color6: #333333;
 }
 
 .flex {
@@ -104,7 +103,7 @@ The element will be visually hidden but will still be read by screen reader tech
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 70%;
 }
 
 section {
@@ -114,9 +113,7 @@ section {
 /* Divs & Containers */
 
 body {
-  font-family: 'Manrope', sans-serif;
-  font-weight: 800;
-  background-color: hsl(188, 40%, 57%);
+  font-family: 'Karla', sans-serif;
 }
 
 /* HEADER SECTION - CSS */
@@ -142,17 +139,78 @@ body {
 
 .nav__link-list li {
   list-style: none;
-  padding-left: 20px;
+  padding-left: 10px;
+}
+
+.nav__link-list li a:hover {
+  color: #495E57;
+  background-color: #F4CE14;
+  padding: 20px 10px;
 }
 
 .nav__link-list li a {
   color: black;
   font-weight: 800;
   text-decoration: none;
+  padding: 0 10px 0 10px;
 }
 
 .hero {
   background-color: #495E57;
+  padding: 0 0 0 0; /* removes my reusable padding that is applied to all section selectors */
+}
+
+.hero__text-wrapper{
+  max-width: 300px; /* check responsivness later  maybe add a min-width also */
+  color: #EDEFEE;
+  /* align-self: flex-start; */
+}
+
+.hero__title {
+  font-size: 64px;
+  font-family: 'Markazi Text', serif;
+  color: #F4CE14;
+}
+
+.hero__sub-title {
+  font-size: 40px;
+  font-family: 'Markazi Text', serif;
+}
+
+.hero__body-text {
+  font-size: 18px;
+  font-family: 'Markazi Text', serif;
+}
+
+.hero__btn {
+  margin-top: 1.5rem;
+}
+
+.hero-img {
+  max-height: 350px;
+}
+
+.btn--primary {
+  background-color: yellow;
+  height: 50px;
+  width: 175px;
+  border-radius: 16px;
+  font-weight: bold;
+  border: none;
+}
+
+.btn--primary:hover {
+  background-color: yellow;
+  opacity: 0.9;
+  border: 2px solid black;
+  cursor: pointer;
+
+  /* background-color: yellow;
+  height: 50px;
+  width: 175px;
+  border-radius: 16px;
+  font-weight: bold;
+  border: none; */
 }
 
 .specials {
@@ -161,10 +219,55 @@ body {
   background-color: #F5F5F5;
 }
 
+.specials__title {
+  font-size: 40px;
+}
+
+.specials__3-card-wrapper {
+  margin-top: 3rem;
+}
+
 .specials__card {
-  height: 439px;
+  /* height: 439px; */
   width: 264px;
-  background-color: pink;
+  border-radius: 16px;
+  background-color: #EDEFEE;
+}
+
+.specials__card__img {
+  border-radius: 16px 16px 0 0;
+  max-height: 175px;
+  width: 100%; /* ensures img stretch to full width of card */
+}
+
+.specials__card__text-wrapper {
+  padding: 1.25rem;
+}
+
+.specials__card__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.specials__card__title-price {
+  color: #EE9972;
+}
+
+.specials__card__body-text {
+  margin: 1rem 0;
+  min-height: 110px;
+  color: #495E57;
+}
+
+.specials__card__delivery-text {
+  font-weight: bold;
+}
+
+.specials__card__delivery-text img {
+  display: inline;
+  padding-left: 1rem;
 }
 
 .footer {
