@@ -199,18 +199,17 @@ body {
   border: none;
 }
 
+/* styles the Link component inside the button */
+.btn--primary a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .btn--primary:hover {
   background-color: yellow;
   opacity: 0.9;
   border: 2px solid black;
   cursor: pointer;
-
-  /* background-color: yellow;
-  height: 50px;
-  width: 175px;
-  border-radius: 16px;
-  font-weight: bold;
-  border: none; */
 }
 
 .specials {
@@ -305,6 +304,7 @@ body {
 .footer__logo {
   max-height: 180px;
 }
+
 
 
 /*

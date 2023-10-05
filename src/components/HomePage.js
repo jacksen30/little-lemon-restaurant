@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default function Main() {
+export default function HomePage() {
   return (
     <main>
       <section className="hero flex">
@@ -9,7 +10,7 @@ export default function Main() {
             <h1 className="hero__title">Little Lemon</h1>
             <h2 className="hero__sub-title">Chicago</h2>
             <p className="hero__body-text">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p> 
-            <button className="btn--primary hero__btn">Reserve A Table</button>
+            <button className="btn--primary hero__btn"><Link to="/reservation">Reserve A Table</Link></button>
           </div>
           <div>
             <img className="hero-img" src="./images/hero-image-resized.png" alt="a plate of colorful entrees" />
@@ -20,7 +21,7 @@ export default function Main() {
       <section className="specials flex">
         <div className="container flex">
           <h3 className="specials__title">Specials</h3>
-          <button className="btn--primary">Online Menu</button>
+          <button className="btn--primary"><Link to="/"> Online Menu</Link></button>
         </div>
         <div className="container flex specials__3-card-wrapper">
           <div className="specials__card specials__card-1">
