@@ -306,6 +306,38 @@ body {
 }
 
 
+/* Reservation / Booking Related CSS */
+
+.reservation{
+  flex-direction: column;
+  align-items: center;
+}
+
+.reservation-form-wrapper {
+  flex-direction: column;
+  max-width: 500px;
+  margin-bottom: 6rem; /* REMOVE ONCE TESTING IS FINISHED */
+}
+
+.reservation-form {
+  flex-direction: column;
+}
+
+.reservation-form label {
+  margin-bottom: 0.2rem;
+  font-weight: 800;
+}
+
+.reservation-form input {
+  margin-bottom: 1rem;
+}
+
+.reservation-form fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
 
 /*
 font-family: 'Karla', sans-serif;
