@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import HomePage from './components/HomePage';
 import Footer from './components/Footer';
-import Reservation from './Reservation';
+import ReservationPage from './ReservationPage';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/reservation" element={<Reservation />} />
+        <Route path="/reservation" element={<ReservationPage />} />
       </Routes>
       <Footer />
     </>
