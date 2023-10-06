@@ -24,10 +24,37 @@ const ReservationForm = ({formData, onFormDataChange, onFormSubmit, formSubmitte
             <input id="date" name="date" type="date" value={formData.date} onChange={handleChange} />
 
             <label htmlFor="time">Select A Time</label>
-            <input id="time" name="time" type="time" value={formData.time} onChange={handleChange} />
+            <select
+                id="time"
+                name="time"
+                value={formData.time}
+                onChange={handleChange}
+            >
+                <option value="" disabled>Choose a time</option>
+                <option value="11:00 AM" >Lunch - 11:00 AM</option>
+                <option value="12:00 PM">Lunch - 11:30 AM</option>
+                <option value="1:00 PM">Lunch - 12:00 PM</option>
+                <option value="6:00 PM">Dinner - 12:30 PM</option>
+                <option value="7:00 PM">Dinner - 1:00 PM</option>
+                <option value="8:00 PM">Dinner - 1:00 PM</option>
+            </select>
+
 
             <label htmlFor="guestCount">Number of Guests (Maximum 10)</label>
             <input id="guestCount" name="guestCount" type="number" min="1" max="10" value={formData.guestCount} onChange={handleChange} />
+
+            <label htmlFor="occassion">Choose Occasion</label>
+            <select
+                id="occasion"
+                name="occasion"
+                value={formData.occasion}
+                onChange={handleChange}
+            >
+                <option value="None">None</option>
+                <option value="Birthday">Birthday</option>
+                <option value="Anniversay">Anniversary</option>
+                <option value="Business">Business</option>
+            </select>
 
             <fieldset>
               <legend>Preferred Seating Area</legend>
@@ -53,14 +80,16 @@ const ReservationForm = ({formData, onFormDataChange, onFormSubmit, formSubmitte
               </label>
             </fieldset>
 
+            <label htmlFor="additionalComment">Additional Comment</label>
+            <input id="additionalComment" name="additionalComment" type="text" value={formData.additionalComment} onChange={handleChange} />
+
             <label htmlFor="contactNumber">Phone Number</label>
             <input id="contactNumber" name="contactNumber" type="number" value={formData.contactNumber} onChange={handleChange} />
 
             <label htmlFor="email">Email</label>
             <input id="email" name="email" type="email" value={formData.email} onChange={handleChange} />
 
-            <button type="submit">Book Table</button>
-
+            <button class="btn--primary btn-form" type="submit">Book Table</button>
           </form>
         </div>
 
@@ -71,9 +100,11 @@ const ReservationForm = ({formData, onFormDataChange, onFormSubmit, formSubmitte
           <p>Date: {formData.date}</p>
           <p>Time: {formData.time}</p>
           <p>Number of Guests: {formData.guestCount}</p>
+          <p>Occasion: {formData.occasion}</p>
           <p>Seating Area: {formData.seatingArea}</p>
           <p>Contact Number: {formData.contactNumber}</p>
           <p>Email: {formData.email}</p>
+          <p>additionalComment: {formData.additionalComment}</p>
           <p>Has Form Been Submitted ?: {formSubmitted ? 'Yes' : 'No'}</p>
         </div>
     </>

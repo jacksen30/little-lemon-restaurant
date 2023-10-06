@@ -9,8 +9,9 @@ export default function HomePage() {
           <div className="hero__text-wrapper">
             <h1 className="hero__title">Little Lemon</h1>
             <h2 className="hero__sub-title">Chicago</h2>
-            <p className="hero__body-text">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p> 
-            <button className="btn--primary hero__btn"><Link to="/reservation">Reserve A Table</Link></button>
+            <p className="hero__body-text">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
+            <Link className="btn--primary hero__btn" to="/reservation">Reserve A Table</Link>
+            {/* <button className="btn--primary hero__btn"><Link to="/reservation">Reserve A Table</Link></button> */}
           </div>
           <div>
             <img className="hero-img" src="./images/hero-image-resized.png" alt="a plate of colorful entrees" />
@@ -21,7 +22,7 @@ export default function HomePage() {
       <section className="specials flex">
         <div className="container flex">
           <h3 className="specials__title">Specials</h3>
-          <button className="btn--primary"><Link to="/"> Online Menu</Link></button>
+          <Link className="btn--primary" to="/"> Online Menu</Link>
         </div>
         <div className="container flex specials__3-card-wrapper">
           <div className="specials__card specials__card-1">

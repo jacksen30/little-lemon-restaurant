@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import BannerMinimal from './BannerMinimal';
 import ReservationForm from './ReservationForm';
 import ReservationConfirmation from './ReservationConfirmation';
 
@@ -10,7 +11,9 @@ export default function ReservationPage() {
     date: '',
     time: '',
     guestCount: '',
+    occasion: '',
     seatingArea: '',
+    additionalComment: '',
     contactNumber: '',
     email: ''
 });
@@ -32,6 +35,7 @@ export default function ReservationPage() {
 
   return (
     <section className="flex reservation">
+      <BannerMinimal />
       {!formSubmitted ?
         <ReservationForm
           formData={formData}
@@ -40,7 +44,9 @@ export default function ReservationPage() {
           formSubmitted={formSubmitted}
         />
       :
-        <ReservationConfirmation />
+        <ReservationConfirmation
+          formData={formData}
+          formSubmitted={formSubmitted} />
       }
     </section>
   )

@@ -183,7 +183,7 @@ body {
 }
 
 .hero__btn {
-  margin-top: 1.5rem;
+  margin: 1.5rem 0 1rem 0;
 }
 
 .hero-img {
@@ -191,18 +191,14 @@ body {
 }
 
 .btn--primary {
+  display: inline-block;
   background-color: yellow;
-  height: 50px;
-  width: 175px;
+  padding: 15px 18px;
   border-radius: 16px;
   font-weight: bold;
-  border: none;
-}
-
-/* styles the Link component inside the button */
-.btn--primary a {
+  border: 2px solid yellow;
   text-decoration: none;
-  color: inherit;
+  text-align: center;
 }
 
 .btn--primary:hover {
@@ -328,7 +324,9 @@ body {
   font-weight: 800;
 }
 
-.reservation-form input {
+.reservation-form input,
+.reservation-form select
+ {
   margin-bottom: 1rem;
 }
 
@@ -336,6 +334,41 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
+}
+
+.reservation-confirmation-wrapper {
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.reservation-confirmation-wrapper {
+  flex-direction: column;
+  max-width: 290px;
+}
+
+.btn-form {
+  width: 100%;
+}
+
+.reservation-confirmation-wrapper a {
+  margin-top: 25px;
+}
+
+.bannerMinimal {
+  flex-direction: column;
+  background-color: #8C8879;
+  min-height:100px;
+  width: 100%;
+}
+
+.bannerMinimal__title {
+  color: var(--color2);
+  font-size: 40px;
+}
+
+.bannerMinimal__sub-title {
+  color: var(--color5);
+  font-size: 25px;
 }
 
 
