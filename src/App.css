@@ -301,7 +301,6 @@ body {
   max-height: 180px;
 }
 
-
 /* Reservation / Booking Related CSS */
 
 .reservation{
@@ -376,3 +375,21 @@ body {
 font-family: 'Karla', sans-serif;
 font-family: 'Markazi Text', serif;
 */
+
+@media screen and (max-width: 500px) {
+
+  .specials__3-card-wrapper {
+    flex-direction: column;
+  }
+  .footer .container {
+    flex-direction: column;
+  }
+
+  .footer__logo {
+    display: none;
+  }
+
+  /* Nav {
+    display: none;
+  } */
+}
