@@ -33,12 +33,16 @@ export default function ReservationPage() {
     setFormSubmitted(true);
   };
 
+  // array of available reservation slots, pass as a prop to ReservationForm
+  const availableBookingTimes = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
+
   return (
     <section className="flex reservation">
       <BannerMinimal />
       {!formSubmitted ?
         <ReservationForm
           formData={formData}
+          availableBookingTimes={availableBookingTimes}
           onFormDataChange={handleFormDataChange}
           onFormSubmit={handleFormSubmit}
           formSubmitted={formSubmitted}

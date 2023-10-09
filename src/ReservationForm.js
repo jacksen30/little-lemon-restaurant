@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ReservationForm = ({formData, onFormDataChange, onFormSubmit, formSubmitted}) => {
+const ReservationForm = ({formData, availableBookingTimes, onFormDataChange, onFormSubmit, formSubmitted}) => {
     const handleChange = (event) => {
         const { name, value } = event.target;
         onFormDataChange(name, value);
@@ -10,6 +10,12 @@ const ReservationForm = ({formData, onFormDataChange, onFormSubmit, formSubmitte
         event.preventDefault();
         onFormSubmit(event);
     };
+
+    // Map over availableBookingTimes to create an option element for each that
+    // can be an option within the choose a time form field
+    const resTimes = availableBookingTimes.map ((item) =>
+    <option key={item} value={item}>{item}</option>
+  );
 
     return (
     <>
@@ -31,12 +37,7 @@ const ReservationForm = ({formData, onFormDataChange, onFormSubmit, formSubmitte
                 onChange={handleChange}
             >
                 <option value="" disabled>Choose a time</option>
-                <option value="11:00 AM" >Lunch - 11:00 AM</option>
-                <option value="12:00 PM">Lunch - 11:30 AM</option>
-                <option value="1:00 PM">Lunch - 12:00 PM</option>
-                <option value="6:00 PM">Dinner - 12:30 PM</option>
-                <option value="7:00 PM">Dinner - 1:00 PM</option>
-                <option value="8:00 PM">Dinner - 1:00 PM</option>
+                {resTimes}
             </select>
 
 
