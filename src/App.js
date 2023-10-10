@@ -1,9 +1,9 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
-import HomePage from './components/HomePage';
-import Footer from './components/Footer';
-import ReservationPage from './ReservationPage';
+import Header from './components/layout/Header';
+import HomePage from './components/pages/home/HomePage';
+import Footer from './components/layout/Footer';
+import ReservationPage from './components/pages/reservations/ReservationPage';
 
 function App() {
   return (
