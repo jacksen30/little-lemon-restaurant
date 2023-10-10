@@ -10,9 +10,9 @@ export default function ReservationPage() {
     guestName: '',
     date: '',
     time: '',
-    guestCount: '',
+    guestCount: 2,
     occasion: '',
-    seatingArea: '',
+    seatingArea: 'Inside',
     additionalComment: '',
     contactNumber: '',
     email: ''

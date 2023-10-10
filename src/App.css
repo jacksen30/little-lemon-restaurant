@@ -303,9 +303,10 @@ body {
 
 /* Reservation / Booking Related CSS */
 
-.reservation{
+.reservation {
   flex-direction: column;
   align-items: center;
+  padding-top: 0;
 }
 
 .reservation-form-wrapper {
@@ -314,11 +315,16 @@ body {
   margin-bottom: 6rem; /* REMOVE ONCE TESTING IS FINISHED */
 }
 
+.reservation-form-wrapper h1 {
+  margin-bottom: 1rem;
+}
+
 .reservation-form {
   flex-direction: column;
 }
 
 .reservation-form label {
+  /* margin-top: 0.5rem; */
   margin-bottom: 0.2rem;
   font-weight: 800;
 }
@@ -326,7 +332,8 @@ body {
 .reservation-form input,
 .reservation-form select
  {
-  margin-bottom: 1rem;
+  margin-bottom: 0; /* changed from 1rem for testing */
+  padding: 0.2rem 0 0.2rem 0.5rem;
 }
 
 .reservation-form fieldset {
@@ -347,6 +354,18 @@ body {
 
 .btn-form {
   width: 100%;
+  margin-top: 1rem;
+}
+
+.error-div {
+  height: 1rem;
+}
+.error-message {
+  font-size: 0.8rem;
+  color: red;
+  text-align: right;
+  margin-top: 0.2rem;
+
 }
 
 .reservation-confirmation-wrapper a {
@@ -355,6 +374,7 @@ body {
 
 .bannerMinimal {
   flex-direction: column;
+  margin-bottom: 2rem;
   background-color: #8C8879;
   min-height:100px;
   width: 100%;
@@ -363,11 +383,13 @@ body {
 .bannerMinimal__title {
   color: var(--color2);
   font-size: 40px;
+  padding-left: 1.5rem;
 }
 
 .bannerMinimal__sub-title {
   color: var(--color5);
   font-size: 25px;
+  padding-left: 1.5rem;
 }
 
 
