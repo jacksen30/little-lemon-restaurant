@@ -387,8 +387,13 @@ body {
 }
 
 .reservation-confirmation-wrapper .comment {
-  margin: 1rem 0;
+  margin: 1rem 0 0 0;
 }
+
+.reservation-confirmation-wrapper .ourContactDetails {
+  margin: 1rem 0 0 0;
+}
+
 .bannerMinimal {
   flex-direction: column;
   margin-bottom: 2rem;
@@ -409,6 +414,11 @@ body {
   padding-left: 1.5rem;
 }
 
+.icon--confimation-tick {
+  margin-top: 1rem;
+  fill:#549712;
+  height: 60px;
+}
 
 /*
 font-family: 'Karla', sans-serif;
