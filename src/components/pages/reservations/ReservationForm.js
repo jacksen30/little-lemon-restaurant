@@ -66,6 +66,15 @@ const ReservationForm = ({formData, availableBookingTimes, onFormDataChange, onF
   <option key={item} value={item}>{item}</option>
   );
 
+  // Converts the Javascript Date String - to "YYYY-MM-DD" format
+  // Referenced in min attribute on date picker to ensure only today and future dates can be picked
+  const formatDateString = (date) => {
+    const year = date.getFullYear();
+    let month = (1 + date.getMonth()).toString().padStart(2, '0');
+    let day = date.getDate().toString().padStart(2, '0');
+    return year + '-' + month + '-' + day;
+  };
+
     return (
     <>
         <div className="flex reservation-form-wrapper">
@@ -76,7 +85,7 @@ const ReservationForm = ({formData, availableBookingTimes, onFormDataChange, onF
             <div className="error-div"><p className="error-message name-input-error-text">{error.guestName}</p></div>
 
             <label htmlFor="date">Select A Date </label>
-            <input id="date" name="date" type="date" value={formData.date} onChange={handleChange} onBlur={handleBlur} />
+            <input id="date" name="date" type="date" min={formatDateString(new Date())} value={formData.date} onChange={handleChange} onBlur={handleBlur} />
             <div className="error-div"><p className="error-message date-input-error-text">{error.date}</p></div>
 
             <label htmlFor="time">Select A Time</label>
