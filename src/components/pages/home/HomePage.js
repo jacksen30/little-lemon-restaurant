@@ -13,8 +13,9 @@ export default function HomePage() {
             <Link className="btn--primary hero__btn" to="/reservation">Reserve A Table</Link>
             {/* <button className="btn--primary hero__btn"><Link to="/reservation">Reserve A Table</Link></button> */}
           </div>
-          <div>
-            <img className="hero-img" src="./images/hero-image-resized.png" alt="a plate of colorful entrees" />
+          <div className="hero-img-wrapper">
+            <img className="hero-img--desktop" src="./images/hero-image-resized.png" alt="a plate of colorful entrees" />
+            <img className="hero-img--mobile" src="./images/hero-image-mobile-cropped.png" alt="a plate of colorful entrees" />
           </div>
         </div>
       </section>

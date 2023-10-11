@@ -18,7 +18,7 @@ export default function ReservationConfirmation({formData, formSubmitted}) {
           <p>Seating Area: {formData.seatingArea}</p>
           <p>Occasion: {formData.occasion}</p>
 
-          <p>additionalComment: {formData.additionalComment}</p>
+          <p className="comment">additionalComment: {formData.additionalComment}</p>
         </div>
         <div>
           <p>A Paragraph of text explaining what to do in theevent of wrong details entered or needing toupdate the booking details at a later date aswell as any other terms or conditions the customer should be aware of in relation to online table reservation.</p>

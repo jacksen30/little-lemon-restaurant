@@ -123,6 +123,7 @@ body {
   justify-content: center;
   background-color: #FFF;
   width: 100%;
+  overflow: hidden;
 }
 
 .header__logo {
@@ -145,7 +146,7 @@ body {
 .nav__link-list li a:hover {
   color: #495E57;
   background-color: #F4CE14;
-  padding: 20px 10px;
+  padding: 30px 10px;
 }
 
 .nav__link-list li a {
@@ -186,8 +187,12 @@ body {
   margin: 1.5rem 0 1rem 0;
 }
 
-.hero-img {
+.hero-img--desktop {
   max-height: 350px;
+}
+
+.hero-img--mobile {
+  display: none;  /* Hides mobile hero-img on larger screens */
 }
 
 .btn--primary {
@@ -372,6 +377,18 @@ body {
   margin-top: 25px;
 }
 
+.reservation-confirmation-wrapper h1 {
+  text-align: center;
+}
+
+.reservation-confirmation-wrapper h2,
+.reservation-confirmation-wrapper h3 {
+  margin: 1.5rem 0 1rem 0;
+}
+
+.reservation-confirmation-wrapper .comment {
+  margin: 1rem 0;
+}
 .bannerMinimal {
   flex-direction: column;
   margin-bottom: 2rem;
@@ -400,9 +417,45 @@ font-family: 'Markazi Text', serif;
 
 @media screen and (max-width: 500px) {
 
+  .container {
+    width: 85%;
+  }
+
+  /* New Code */
+
+  .hero {
+    padding: 1.5rem 0;
+  }
+
+  .hero .container {
+    flex-direction: column;
+  }
+
+  .hero-img--desktop {
+    display: none; /* Hides desktop hero-img on smaller screens */
+  }
+
+  .hero-img--mobile {
+    display: block;
+  }
+
+  .hero__title {
+    line-height: 0.8;
+  }
+
+  .hero__body-text {
+    margin-right: 20px; /* Allows body text to have less visual width while not affecting the parent flex container positioning */
+  }
+
   .specials__3-card-wrapper {
     flex-direction: column;
   }
+
+  .specials__card {
+    margin-bottom: 1.5rem;
+    width: 290px; /* Increased from 264px on larger screens */
+  }
+
   .footer .container {
     flex-direction: column;
   }
