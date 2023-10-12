@@ -11,7 +11,6 @@ export default function HomePage() {
             <h2 className="hero__sub-title">Chicago</h2>
             <p className="hero__body-text">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
             <Link className="btn--primary hero__btn" to="/reservation">Reserve A Table</Link>
-            {/* <button className="btn--primary hero__btn"><Link to="/reservation">Reserve A Table</Link></button> */}
           </div>
           <div className="hero-img-wrapper">
             <img className="hero-img--desktop" src="./images/hero-image-resized.png" alt="a plate of colorful entrees" />
@@ -61,6 +60,45 @@ export default function HomePage() {
               <p className="specials__card__delivery-text">Order a delivery<img src="./images/delivery-icon.png" alt="delivery bike" /></p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="testimonials flex">
+        <h3 className="testimonials__heading">From mouthwatering meals to exceptional service, our guests have spoken...</h3>
+        <div className="container">
+          <div className="testimonials-card-wrapper flex">
+
+            <div className="testimonials__card testimonials__card-1 flex">
+              <img className="card__avatar" src="./images/av1.jpg" alt=""></img>
+              <p>Sarah Smith</p>
+              <p>⭐⭐⭐⭐</p>
+              <p className="review-text">"Your website has been a game-changer for me. It's like a breath of fresh air in the online world, making my life easier and more enjoyable. Thank you!"</p>
+            </div>
+
+            <div className="testimonials__card testimonials__card-2 flex">
+              <img className="card__avatar" src="./images/av1.jpg" alt=""></img>
+              <p>Sarah Smith</p>
+              <p>⭐⭐⭐⭐</p>
+              <p className="review-text">"Your website has been a game-changer for me. It's like a breath of fresh air in the online world, making my life easier and more enjoyable. Thank you!"</p>
+            </div>
+
+            <div className="testimonials__card testimonials__card-3 flex">
+              <img className="card__avatar" src="./images/av1.jpg" alt=""></img>
+              <p>Sarah Smith</p>
+              <p>⭐⭐⭐⭐</p>
+              <p className="review-text">"Your website has been a game-changer for me. It's like a breath of fresh air in the online world, making my life easier and more enjoyable. Thank you!"</p>
+            </div>
+
+            <div className="testimonials__card testimonials__card-4 flex">
+              <img className="card__avatar" src="./images/av1.jpg" alt=""></img>
+              <p>Sarah Smith</p>
+              <p>⭐⭐⭐⭐</p>
+              <p className="review-text">"Your website has been a game-changer for me. It's like a breath of fresh air in the online world, making my life easier and more enjoyable. Thank you!"</p>
+            </div>
+
+          </div>
+
+
         </div>
       </section>
     </main>

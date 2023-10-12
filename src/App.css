@@ -197,6 +197,7 @@ body {
 
 .btn--primary {
   display: inline-block;
+  color: black;
   background-color: yellow;
   padding: 15px 18px;
   border-radius: 16px;
@@ -365,6 +366,7 @@ body {
 .error-div {
   height: 1rem;
 }
+
 .error-message {
   font-size: 0.8rem;
   color: red;
@@ -418,6 +420,40 @@ body {
   margin-top: 1rem;
   fill:#549712;
   height: 60px;
+}
+
+.testimonials {
+  background-color: var(--color1);
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials__heading {
+  color: var(--color2)
+}
+
+.testimonials-card-wrapper {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.testimonials__card {
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  padding: 0 0.8rem 0.8rem 0.8rem;
+  border-radius: 16px;
+  background-color: #FFF;
+}
+
+.card__avatar {
+  border-radius: 1000px;
+  margin: 1rem 0;
+  width: 50%;
+}
+
+.review-text {
+  margin-top: 0.5rem;
 }
 
 /*
