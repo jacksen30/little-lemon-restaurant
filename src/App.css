@@ -428,8 +428,15 @@ body {
   align-items: center;
 }
 
+.testimonials__heading-wrapper {
+  flex-direction: column;
+}
+
 .testimonials__heading {
-  color: var(--color2)
+  align-self: flex-start;
+  font-size: 22px;
+  color: var(--color2);
+  margin-bottom: 2rem;
 }
 
 .testimonials-card-wrapper {

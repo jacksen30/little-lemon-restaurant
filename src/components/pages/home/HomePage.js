@@ -64,8 +64,8 @@ export default function HomePage() {
       </section>
 
       <section className="testimonials flex">
-        <h3 className="testimonials__heading">From mouthwatering meals to exceptional service, our guests have spoken...</h3>
-        <div className="container">
+        <div className="container testimonials__heading-wrapper">
+          <h3 className="testimonials__heading">From mouthwatering meals to exceptional service, our guests have spoken...</h3>
           <div className="testimonials-card-wrapper flex">
 
             <div className="testimonials__card testimonials__card-1 flex">
