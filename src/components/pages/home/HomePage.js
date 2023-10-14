@@ -69,31 +69,31 @@ export default function HomePage() {
           <div className="testimonials-card-wrapper flex">
 
             <div className="testimonials__card testimonials__card-1 flex">
-              <img className="card__avatar" src="./images/av1.jpg" alt=""></img>
-              <p>Sarah Smith</p>
-              <p>⭐⭐⭐⭐</p>
-              <p className="review-text">"Your website has been a game-changer for me. It's like a breath of fresh air in the online world, making my life easier and more enjoyable. Thank you!"</p>
+              <img className="card__avatar" src="./images/av1.jpg" alt="reviewer" />
+              <p className="testimonial__name">Sarah Smith</p>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p className="review-text">"Little Lemon has truly become our favourite restaurant. The authentic Mediterranean flavours and the inviting atmosphere. It's a place we can't get enough of!"</p>
             </div>
 
             <div className="testimonials__card testimonials__card-2 flex">
-              <img className="card__avatar" src="./images/av1.jpg" alt=""></img>
-              <p>Sarah Smith</p>
+              <img className="card__avatar" src="./images/av2.jpg" alt="reviewer" />
+              <p className="testimonial__name">Markus Cross</p>
               <p>⭐⭐⭐⭐</p>
-              <p className="review-text">"Your website has been a game-changer for me. It's like a breath of fresh air in the online world, making my life easier and more enjoyable. Thank you!"</p>
+              <p className="review-text">"The ambiance was as delightful as the food and the food was 5 star !! Can't wait to return on our next holiday to Perth!"</p>
             </div>
 
             <div className="testimonials__card testimonials__card-3 flex">
-              <img className="card__avatar" src="./images/av1.jpg" alt=""></img>
-              <p>Sarah Smith</p>
-              <p>⭐⭐⭐⭐</p>
-              <p className="review-text">"Your website has been a game-changer for me. It's like a breath of fresh air in the online world, making my life easier and more enjoyable. Thank you!"</p>
+              <img className="card__avatar" src="./images/av3.jpg" alt="reviewer" />
+              <p className="testimonial__name">Jasmine Wilson</p>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p className="review-text">"Little Lemon, your Mediterranean fare is simply outstanding, a welcomed gust of fresh air in my culinary journey. Much gratitude!"</p>
             </div>
 
             <div className="testimonials__card testimonials__card-4 flex">
-              <img className="card__avatar" src="./images/av1.jpg" alt=""></img>
-              <p>Sarah Smith</p>
+              <img className="card__avatar" src="./images/av5.jpg" alt="reviewer" />
+              <p className="testimonial__name">Priya Patel</p>
               <p>⭐⭐⭐⭐</p>
-              <p className="review-text">"Your website has been a game-changer for me. It's like a breath of fresh air in the online world, making my life easier and more enjoyable. Thank you!"</p>
+              <p className="review-text">"Little Lemon is a taste of the Mediterranean right in my neighborhood. Their dishes are like postcards from abroad"</p>
             </div>
 
           </div>
