@@ -516,6 +516,14 @@ font-family: 'Markazi Text', serif;
     width: 290px; /* Increased from 264px on larger screens */
   }
 
+  .testimonials-card-wrapper.flex {
+    flex-direction: column;
+  }
+
+  /* .testimonials__card {
+    width: 300px;
+  } */
+
   .footer .container {
     flex-direction: column;
   }
